@@ -20,4 +20,13 @@ Key tools used in this Django project are:
 ## How to run:
 1. Clone the whole repository to your machine.
 2. cd into root folder, use command `pip install -r requirements.txt`
-3. Run the server by command `python manage.py runserver`
+3. build new user like
+```
+user@host> manage.py shell
+>>> from django.contrib.auth.models import User
+>>> user=User.objects.create_user('foo', password='bar')
+>>> user.is_superuser=True
+>>> user.is_staff=True
+>>> user.save()
+```
+4. Run the server by command `python manage.py runserver`
