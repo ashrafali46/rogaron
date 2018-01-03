@@ -1,0 +1,32 @@
+#header
+{
+    margin: 0;
+    padding: 10px;
+    text-align: right;
+    background: blueviolet;
+}
+#content
+{
+    padding: 10px;
+}
+#container {
+    display: flex;
+    align-items: stretch;
+    min-height: 100vh;
+}
+#sidebar {
+    flex: none;
+    width: 190px;
+    background: orange;
+}
+#footer
+{
+    margin: 0;
+    padding: 10px;
+    text-align: center;
+}
+textarea, input[type=number], input[type=url]
+{
+    height: 1.25em;
+    width: 25em;
+}
